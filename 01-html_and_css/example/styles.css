@@ -1,0 +1,39 @@
+:root {
+    --c-black: #000000;
+    --c-white: #ffffff;
+    --size-4: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-template: "header";
+    text-align: center;
+    background: var(--c-black);
+    color: var(--c-white);
+    padding: var(--size-4);
+}
+
+main {
+    grid-template: "main";
+    background: var(--c-white);
+    color: var(--c-black);
+    padding: var(--size-4);
+}
+
+footer {
+    grid-template: "footer";
+    text-align: center;
+    background: var(--c-black);
+    color: var(--c-white);
+    padding: var(--size-4);
+}
+
