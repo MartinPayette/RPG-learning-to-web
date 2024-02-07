@@ -29,9 +29,9 @@ header {
 
 main {
     grid-template: "main";
+    padding: var(--size-4);
     background: var(--c-white);
     color: var(--c-black);
-    padding: var(--size-4);
 }
 
 footer {
@@ -43,19 +43,49 @@ footer {
 }
 
 .todo-list {
-    padding: 0;
-    list-style-type: decimal;
+    counter-reset: todo;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.todo-list > li {
+    counter-increment: todo;
+    display: flex;
+    border-bottom: 1px solid var(--c-gray-100);
+    background: var(--c-white);
+    transition: all ease-in 100ms;
+}
+
+.todo-list > li:hover {
+    background: var(--c-gray-100);
 }
 
 .todo-list-item {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--size-4);
-    border-bottom: 1px solid var(--c-gray-100);
+    cursor: pointer;
+}
+
+.todo-list-counter::before {
+    content: counter(todo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-content {
+    margin-left: var(--size-4);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .todo-item-title {
     font-size: 1.2rem;
+    user-select: none;
 }
 
