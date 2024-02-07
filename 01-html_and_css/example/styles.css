@@ -1,6 +1,11 @@
 :root {
-    --c-black: #000000;
     --c-white: #ffffff;
+    --c-gray-100: #e8e8e8;
+    --c-gray-200: #d9d9d9;
+    --c-gray-300: #c4c4c4;
+    --c-gray-400: #a9a9a9;
+    --c-gray-500: #858585;
+    --c-black: #000000;
     --size-4: 1rem;
 }
 
@@ -35,5 +40,22 @@ footer {
     background: var(--c-black);
     color: var(--c-white);
     padding: var(--size-4);
+}
+
+.todo-list {
+    padding: 0;
+    list-style-type: decimal;
+}
+
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-4);
+    border-bottom: 1px solid var(--c-gray-100);
+}
+
+.todo-item-title {
+    font-size: 1.2rem;
 }
 
