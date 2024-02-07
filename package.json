@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "example1": "node .scripts/serve.mjs 01-html_and_css/example",
-    "act1": "node .scripts/serve.mjs 01-html_and_css/project"
+    "act1": "node .scripts/serve.mjs 01-html_and_css/project",
+    "nocommit1": "node .scripts/serve.mjs 01-html_and_css/.nocommit"
   },
   "repository": {
     "type": "git",
