@@ -11,8 +11,7 @@ Implement the interactivity between the increment/decrement button and the stat 
 5. When the increment/decrement button has reached it's limit it should become disabled
 6. When the stat value is no longer at a limit it should re-enable the increment/decrement button
 
-Video
-[![image](./.files/ezgif-3-56ffce3ae4.gif)](.files/2024-02-06%2023-52-58.mp4)
+![image](./.files/ezgif-3-56ffce3ae4.gif)
 
 What's expected about this implementation:
 - Code should not be duplicated for each stat. The functionality should be reusable for any number of stat.
