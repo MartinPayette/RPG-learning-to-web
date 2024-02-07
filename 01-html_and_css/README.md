@@ -1,5 +1,7 @@
 # Act 1 - HTML and CSS
 
+`npm run act1`
+
 Implement the UI (user interface) for a character stats screen.
 
 1. This screen must be composed of at least 5 stats. For example: Vitality, Energy, Intelligence, Strength and Dexterity

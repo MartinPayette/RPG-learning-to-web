@@ -1,8 +1,15 @@
 # RPG-learning-to-web
+
 A step by step project to learn html/css to html/css/typescript/react/sql going through all the basics before using React
 
-## Act 1
+## Getting started
 
-Run example project, **todo list**, with `npm run example1`
+Install project dependencies with
+```bash
+npm i
+```
 
-Run project, 
+## Project Acts
+
+- [Act 1](01-html_and_css/README.md)
+- [Act 2](02-html_css_and_js)
