@@ -1,0 +1,49 @@
+header {
+  text-align: center;
+  font-size: 40px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-image: url(/images/seamless-rock.png);
+  background-repeat: repeat;
+}
+
+h1 {
+  color: antiquewhite;
+  padding-top: 3%;
+  padding-left: 10%;
+  font-size: 2rem;
+}
+.lists-stats {
+  list-style: none;
+  margin-block: 20px;
+  padding: 1em;
+  padding-left: 10%;
+}
+
+.attribute {
+  width: 50%;
+  font-size: 1.3rem;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2%;
+}
+
+.attribute-right-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 80%;
+  width: auto;
+  background-image: none;
+}
+
+.stats {
+}
+.statsbtn {
+  font-size: large;
+  margin-left: auto;
+  margin: auto;
+}
