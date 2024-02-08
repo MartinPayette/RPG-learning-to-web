@@ -1,0 +1,113 @@
+:root {
+    --c-white: #ffffff;
+    --c-gray-50: #f5f5f5;
+    --c-gray-100: #e8e8e8;
+    --c-gray-200: #d9d9d9;
+    --c-gray-300: #c4c4c4;
+    --c-gray-400: #a9a9a9;
+    --c-gray-500: #858585;
+    --c-blue-500: #0044fd;
+    --c-black: #000000;
+    --size-4: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-template: "header";
+    text-align: center;
+    background: var(--c-black);
+    color: var(--c-white);
+    padding: var(--size-4);
+}
+
+main {
+    grid-template: "main";
+    padding: var(--size-4);
+    background: var(--c-white);
+    color: var(--c-black);
+}
+
+footer {
+    grid-template: "footer";
+    text-align: center;
+    background: var(--c-black);
+    color: var(--c-white);
+    padding: var(--size-4);
+}
+
+.todo-list {
+    counter-reset: todo;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.todo-list > li {
+    counter-increment: todo;
+    display: flex;
+    border-bottom: 1px solid var(--c-gray-100);
+    background: var(--c-white);
+    transition: all ease-in 100ms;
+}
+
+.todo-list > li:hover {
+    background: var(--c-gray-100);
+}
+
+.todo-list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-4);
+    cursor: pointer;
+}
+
+.todo-list-counter::before {
+    content: counter(todo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-content {
+    margin-left: var(--size-4);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item-title {
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+#form {
+    display: flex;
+    margin-top: var(--size-4);
+}
+
+#input-text {
+    flex: 1;
+    padding: var(--size-4);
+    border: none;
+    background: var(--c-gray-50);
+    border-bottom: 1px solid var(--c-gray-300);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.add-btn {
+    background: var(--c-blue-500);
+    color: var(--c-white);
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}

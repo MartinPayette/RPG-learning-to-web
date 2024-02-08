@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <!--
+        the "defer" attribute is REQUIRED.
+        It allows the script to execute AFTER the HTML was loaded
+        in order to access the required HTML nodes inside the script.
+        Without it, "getElementById", "querySelector" and other things alike
+        could not access the elements as expected.
+     -->
+    <script src="/scripts/todo-input.js" defer></script>
+    <title>HTML & CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Todo-list</h1>
+    </header>
+    <main>
+        <ol id="todo-list" class="todo-list">
+            <li>
+                <label class="todo-list-item">
+                    <span class="todo-list-counter"></span>
+                    <div class="todo-content">
+                        <h2 class="todo-item-title">Take the kids to school</h2>
+                        <input class="todo-item-checkbox" type="checkbox" checked>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="todo-list-item">
+                    <span class="todo-list-counter"></span>
+                    <div class="todo-content">
+                        <h2 class="todo-item-title">Do the laundry</h2>
+                        <input class="todo-item-checkbox" type="checkbox">
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="todo-list-item">
+                    <span class="todo-list-counter"></span>
+                    <div class="todo-content">
+                        <h2 class="todo-item-title">Do the dishes</h2>
+                        <input class="todo-item-checkbox" type="checkbox">
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="todo-list-item">
+                    <span class="todo-list-counter"></span>
+                    <div class="todo-content">
+                        <h2 class="todo-item-title">Go grocery shopping</h2>
+                        <input class="todo-item-checkbox" type="checkbox">
+                    </div>
+                </label>
+            </li>
+        </ol>
+        <form id="form">
+            <input id="input-text" type="text" name="todo-text" />
+            <button class="add-btn">
+                Add
+            </button>
+        </form>
+    </main>
+    <footer>
+        <span>Example 1</span>
+    </footer>
+</body>
+</html>

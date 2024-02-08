@@ -8,6 +8,7 @@
     "example1": "node .scripts/serve.mjs 01-html_and_css/example",
     "act1": "node .scripts/serve.mjs 01-html_and_css/project",
     "nocommit1": "node .scripts/serve.mjs 01-html_and_css/.nocommit",
+    "example2": "node .scripts/serve.mjs 02-html_css_and_js/example",
     "act2": "node .scripts/serve.mjs 02-html_css_and_js/project"
   },
   "repository": {
